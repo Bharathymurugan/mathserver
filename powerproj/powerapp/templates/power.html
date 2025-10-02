@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .calc{
+            font-family: algerian;
+            font-size: x-large;
+            color: #E0EEC6;
+        }
+        body{
+            background-image: url("https://img.freepik.com/premium-photo/light-bulb-with-dark-background-blue-background_777078-2360.jpg");
+            background-size: cover;
+        }
+    </style>
+    <title>Power calculator</title>
+</head>
+<body>
+
+    <p style="text-align: center;font-size: xx-large;font-family: algerian;background-color: rgba(62, 225, 247, 0.5);color: #E4FDE1;text-shadow:
+       0 0 1px #00ff3c,  /* very tight yellow glow */
+      0 0 2px #00ff15,
+      0 0 3px #9efd60,
+      0 0 4px #87fc5c;">POWER CALCULATOR</p>
+    <center><form method="post">
+        {%csrf_token%}
+        <div class="calc">
+        <label for="I">Enter Current value(in amperes):</label>
+        <input type="number" name="I" placeholder="Current"><br><br><br>
+        <label for="R">Enter Resistance value(in ohm):</label>
+        <input type="number" name="R" placeholder="Resistance"><br><br><br>
+       <i><button type="submit" style="border-radius: 40px;background-color: aqua;font-size: xx-large;">Calculate</button></i>
+        </div>
+    </form>
+    
+    </center>
+</body>
+</html>
